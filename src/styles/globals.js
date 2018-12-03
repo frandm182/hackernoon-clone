@@ -1,5 +1,5 @@
-
 import { createGlobalStyle } from 'styled-components';
+import { colorsDark } from './palette';
 
 const setGlobalStyles = () =>
   createGlobalStyle`
@@ -12,6 +12,7 @@ const setGlobalStyles = () =>
       overflow-x: hidden;
       margin: 0;
       padding: 0;
+      background-color: ${colorsDark.background};
     }
     ul {
       list-style: none;
