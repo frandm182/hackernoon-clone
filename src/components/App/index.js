@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from "styled-components";
-/* import List from "../List";
- */import { colorsDark } from "../../styles/palette";
+import List from "../List";
+import { colorsDark } from "../../styles/palette";
 
 import { Wrapper, Title } from "./styles";
 class App extends Component {
@@ -11,6 +11,7 @@ class App extends Component {
         <div>
           <Wrapper>
             <Title>Hacker news</Title>
+            <List />
           </Wrapper>
         </div>
       </ThemeProvider>
