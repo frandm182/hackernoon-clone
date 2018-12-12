@@ -27,7 +27,6 @@ const actions = {
     },
     fetchStories: (payload = {}) => {
       return dispatch => {
-        console.log(payload, '******')
         const { storyIds, page } = payload;
         dispatch(action(actionTypes.FETCH_STORIES_REQUEST, payload));
 

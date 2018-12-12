@@ -10,7 +10,6 @@ class App extends Component {
   }
   render() {
     const { stories } = this.props;
-    console.log('Render', stories);
     return (
       <ThemeProvider theme={colorsDark}>
         <div>
