@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { colorsDark } from './palette';
 
-const setGlobalStyles = () =>
+const setGlobalStyles =
   createGlobalStyle`
     * {
       box-sizing: border-box;
