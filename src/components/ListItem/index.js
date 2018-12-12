@@ -3,16 +3,16 @@ import { Item, Title, Host, ExternalLink, Description, CommentLink } from './sty
 
 const LINK_REL = 'nofolow noreferrer noopener';
 
-const ListItem = () => {
+const ListItem = ({ title, url, score }) => {
   return (
     <Item>
-      <ExternalLink href='https://gitconnected.com' rel={LINK_REL} target='_blank'>
+      <ExternalLink href={url} rel={LINK_REL} target='_blank'>
         <Title>
-          The developer community <Host>(gitconnected.com)</Host>
+          {title} <Host>(gitconnected.com)</Host>
         </Title>
       </ExternalLink>
       <Description>
-        9000 point by ${' '}
+        {score} point by ${' '}
         <CommentLink href='#' rel={LINK_REL} target='_blank'>
           Test user
         </CommentLink>
